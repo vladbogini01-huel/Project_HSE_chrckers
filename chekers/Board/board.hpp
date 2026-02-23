@@ -12,8 +12,6 @@ public:
     void draw(sf::RenderWindow& window, const sf::Font& font);
 
 
-    sf::Vector2f getScreenPosition(int row, int col) const;
-    bool isValidPosition(int row, int col) const;
 
 private:
     static const int BOARD_SIZE = 8;

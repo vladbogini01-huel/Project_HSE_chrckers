@@ -99,18 +99,6 @@ void Board::drawBorder(sf::RenderWindow& window) {
     window.draw(border);
 }
 
-
-sf::Vector2f Board::getScreenPosition(int row, int col) const {
-    return sf::Vector2f(
-            m_offsetX + col * m_cellSize + m_cellSize / 2,
-            m_offsetY + row * m_cellSize + m_cellSize / 2
-    );
-}
-
-bool Board::isValidPosition(int row, int col) const {
-    return row >= 0 && row < BOARD_SIZE && col >= 0 && col < BOARD_SIZE;
-}
-
 std::string Board::getColumnLetter(int col) const {
     
     char letter = 'a' + col;
