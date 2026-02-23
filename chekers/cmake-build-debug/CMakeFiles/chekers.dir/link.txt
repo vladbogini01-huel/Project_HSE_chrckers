@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/chekers.dir/main.cpp.o CMakeFiles/chekers.dir/Board/board.cpp.o -o chekers   -L/opt/homebrew/lib  -Wl,-rpath,/opt/homebrew/lib /opt/homebrew/lib/libsfml-graphics.dylib /opt/homebrew/lib/libsfml-window.dylib /opt/homebrew/lib/libsfml-system.dylib
